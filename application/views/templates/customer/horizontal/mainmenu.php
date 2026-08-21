@@ -52,6 +52,25 @@ $menus = PBX_Menu_Permissions();
                         <span data-pbx="{l_menu.smssent_jquery_view}">{l_menu.smssent_jquery_view}</span>
                     </a>
                 </li> <?php }  ?>
+
+                <?php if(isset($menus["register"])) { ?>
+                <li class="nav-item<?=($module=="register")?" active":""?>">
+                    <a class="nav-link" href="{base_url}register">
+                        <i class="feather icon-credit-card"></i>
+                        <span data-pbx="{l_menu.register}">{l_menu.register}</span>
+                    </a>
+                </li> <?php }  ?>
+
+                <?php if(isset($menus["admin"])) { ?>
+                <li class="dropdown nav-item<?=($module=="admin") ? " sidebar-group-active active open":""?>" data-menu="dropdown">
+                    <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="fa fa-file-excel-o"></i><span data-pbx="{l_menu.admin.primary}">{l_menu.admin.primary}</span></a>
+                    <ul class="dropdown-menu">
+                        <li<?=!in_array('registrations', $menus["admin"]) ? ' class="disabled"' : (($module=="admin" && $action=="registrations") ? " class='active'":"")?>><a class="dropdown-item" href="{base_url}admin/registrations" data-toggle="dropdown" data-pbx="{l_menu.admin.registrations}"><i class="feather icon-list"></i>{l_menu.admin.registrations}</a></li>
+
+                    </ul>
+                </li>
+                
+                <?php }  ?>
             </ul>
         </div>
     </div>

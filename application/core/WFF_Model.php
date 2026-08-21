@@ -44,8 +44,13 @@
  * @property Mongo_db $mongo_db                   Mongo_db library object
  */
 
-class WFF_Model extends CI_Model {
-	
-	
-	
+class WFF_Model extends CI_Model
+{
+    public function __construct()
+    {
+        parent::__construct();
+        if (!isset($this->db)) {
+            $this->load->database();
+        }
+    }
 }

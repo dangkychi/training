@@ -34,6 +34,10 @@ $lang["l_menu"]["reports"]["report_three"] = "Report 3";
 $lang["l_menu"]["smssent"] = "List SMS server view Code";
 $lang["l_menu"]["smssent_jquery_view"] = "List SMS jquery view Code";
 
+$lang["l_menu"]["register"] = "Register document";
+$lang["l_menu"]["admin"]["primary"] = "Admin";
+$lang["l_menu"]["admin"]["registrations"] = "Registrations";
+
 
 // Kendo Grid Text Filter-----------------------------------------------------
 $lang["kendo"]["grid"]["filter"]["operators"]["eq"] = "Equals";

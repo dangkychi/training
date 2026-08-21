@@ -43,5 +43,9 @@ node_modules/
 *.temp
 *.swp
 
+# Agent rules and skills
+.agent/
+.agents/
+
 # Training documents
 *.docx

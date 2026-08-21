@@ -34,6 +34,10 @@ $lang["l_menu"]["reports"]["report_three"] = "Báo cáo 3";
 $lang["l_menu"]["smssent"] = "DS SMS server view Code";
 $lang["l_menu"]["smssent_jquery_view"] = "DS SMS jquery view Code";
 
+$lang["l_menu"]["register"] = "Đăng ký tài liệu";
+$lang["l_menu"]["admin"]["primary"] = "Admin";
+$lang["l_menu"]["admin"]["registrations"] = "Danh sách đăng ký";
+
 
 // Kendo Grid Text Filter-----------------------------------------------------
 $lang["kendo"]["grid"]["filter"]["operators"]["eq"] = "Bằng";

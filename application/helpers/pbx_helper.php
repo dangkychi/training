@@ -11,6 +11,8 @@ function PBX_Menu_Permissions() : array
             "reports"    	=> ["report_one", "report_two", "report_three"],
             "smssent" => 1,
             "smssent_jquery_view" => 1,
+			"register" => 1,
+			"admin" => ["registrations"],
         ];
          /* 
          */

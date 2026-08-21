@@ -50,3 +50,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |       my-controller/my-method -> my_controller/my_method
 */
 $route['default_controller'] = 'dashboard';
+
+// Registration
+$route['register'] = 'register/index';
+$route['register/submit'] = 'register/submit';
+$route['register/activate/(:any)'] = 'register/activate/$1';
+
+// Tracking (pixel + download)
+$route['tracking/open/(:any)'] = 'tracking/open/$1';
+$route['tracking/download/(:any)'] = 'tracking/download/$1';
+
+// Admin
+$route['admin/registrations'] = 'admin/registrations/index';
+$route['admin/registrations/readdb'] = 'admin/registrations/readdb';
+$route['admin/registrations/resend_activation'] = 'admin/registrations/resend_activation';
+$route['admin/registrations/resend_download'] = 'admin/registrations/resend_download';

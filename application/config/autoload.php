@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('session','parser','WFF_Parser'=>'smarty');
+$autoload['libraries'] = array('database', 'session', 'parser', 'WFF_Parser' => 'smarty');
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url', 'form','pbx_helper');
+$autoload['helper'] = array('url', 'form', 'pbx_helper');
 
 /*
 | -------------------------------------------------------------------
